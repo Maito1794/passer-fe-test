@@ -11,11 +11,11 @@ export class BaseComponent {
   title = 'Catálogo de Riesgos'
   currentTab: any = '';
   tabList = [
-    { name: 'Ocupaciones', action: 'ocupaciones' },
-    { name: 'Países', action: 'paises' },
-    { name: 'Identificaciones', action: 'identificaciones' },
+    { name: 'Ocupaciones', action: '/ocupaciones' },
+    { name: 'Países', action: '/paises' },
+    { name: 'Identificaciones', action: '/identificaciones' },
   ];
-  changeLink(action: any): void {
-    this.router.navigate(['/' + action.action]);
+  changePage(action: any): void {
+    this.router.navigate([action.action]);
   }
 }
