@@ -1,9 +1,11 @@
 <app-box-white class="titleClass" [title]="title">
     <mat-form-field>
         <mat-label>{{"ocupations"|translate}}</mat-label>
-        <mat-select>
-            <mat-option>
+        <input type="text" matInput [formControl]="occupationControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let occupation of filterOccupations(occupationControl.value)" [value]="occupation">
+                {{occupation.name}}
             </mat-option>
-        </mat-select>
+        </mat-autocomplete>
     </mat-form-field>
 </app-box-white>
