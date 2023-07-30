@@ -1,3 +1,12 @@
 {
-  
+    "risk-catalog": "Risk Catalog",
+    "ocupations": "Ocupations",
+    "countries": "Countries",
+    "country": "Country",
+    "identifications": "Identifications",
+    "search": "Search",
+    "sugef-code": "SUGEF Code",
+    "risk-level": "Risk Level",
+    "afghanistan": "Afghanistan",
+    "united-states": "United States"
 }

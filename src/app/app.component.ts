@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'passer-fe-test';
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('es');
-    translate.use('es');
+    translate.use('en');
   }
 }

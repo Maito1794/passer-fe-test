@@ -7,10 +7,11 @@ import { OcupationComponent } from './base/ocupation/ocupation.component';
 import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from '../app/app.material.module';
 import { CountryComponent } from './base/country/country.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [BaseComponent, OcupationComponent, CountryComponent],
-    imports: [CommonModule, ComponentsModule, RouterModule, AppMaterialModule], // Asegúrate de importar ComponentsModule aquí
-    exports: [BaseComponent, OcupationComponent],
+    imports: [CommonModule, ComponentsModule, RouterModule, AppMaterialModule, TranslateModule], // Asegúrate de importar ComponentsModule aquí
+    exports: [BaseComponent, OcupationComponent, CountryComponent],
 })
 export class PagesModule { }
