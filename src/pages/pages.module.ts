@@ -8,9 +8,10 @@ import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from '../app/app.material.module';
 import { CountryComponent } from './base/country/country.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { IdentificationTypeComponent } from './base/identification-type/identification-type.component';
 
 @NgModule({
-    declarations: [BaseComponent, OcupationComponent, CountryComponent],
+    declarations: [BaseComponent, OcupationComponent, CountryComponent, IdentificationTypeComponent],
     imports: [CommonModule, ComponentsModule, RouterModule, AppMaterialModule, TranslateModule], // Asegúrate de importar ComponentsModule aquí
     exports: [BaseComponent, OcupationComponent, CountryComponent],
 })
