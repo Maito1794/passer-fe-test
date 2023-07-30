@@ -21,7 +21,7 @@ export class OcupationComponent {
     this.loadOccupations();
   }
   async loadOccupations(): Promise<void> {
-    const response = await this.generalMethodsService.getOccupations();
+    const response = await this.generalMethodsService.GET_OCCUPATIONS();
     if (response.success) {
       this.occupations = response.data as Ocupation[];
     } else {

@@ -20,7 +20,7 @@ export class GeneralMethodsService {
     this.urlCatalogs = environment.serverUrlCatalogs;
   }
 
-  async getOccupations(): Promise<BaseResponse> {
+  async GET_OCCUPATIONS(): Promise<BaseResponse> {
     const response$ = this.http.get<{ success: boolean; data: Ocupation[] }>(
       this.urlCatalogs + this.GET_OCUPATIONS,
     );
