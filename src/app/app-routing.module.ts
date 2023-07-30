@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BaseComponent } from '../pages/base/base.component';
 import { OcupationComponent } from '../pages/base/ocupation/ocupation.component';
+import { CountryComponent } from '../pages/base/country/country.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/ocupaciones', pathMatch: 'full' },
+  { path: '', redirectTo: 'ocupaciones', pathMatch: 'full' },
   { path: 'ocupaciones', component: OcupationComponent },
+  { path: 'paises', component: CountryComponent },
+
 ];
 
 @NgModule({

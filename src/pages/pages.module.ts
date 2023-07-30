@@ -6,9 +6,10 @@ import { BaseComponent } from './base/base.component';
 import { OcupationComponent } from './base/ocupation/ocupation.component';
 import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from '../app/app.material.module';
+import { CountryComponent } from './base/country/country.component';
 
 @NgModule({
-    declarations: [BaseComponent, OcupationComponent],
+    declarations: [BaseComponent, OcupationComponent, CountryComponent],
     imports: [CommonModule, ComponentsModule, RouterModule, AppMaterialModule], // Asegúrate de importar ComponentsModule aquí
     exports: [BaseComponent, OcupationComponent],
 })

@@ -1,0 +1,22 @@
+<app-box-white class="titleClass" [title]="title">
+    <mat-form-field>
+        <mat-label>País</mat-label>
+        <input type="text" matInput>
+    </mat-form-field>
+</app-box-white>
+<table mat-table [dataSource]="data">
+    <ng-container matColumnDef="pais">
+        <th mat-header-cell *matHeaderCellDef> País </th>
+        <td mat-cell *matCellDef="let element"> {{element.pais}} </td>
+    </ng-container>
+    <ng-container matColumnDef="codigo_sugef">
+        <th mat-header-cell *matHeaderCellDef> Código SUGEF </th>
+        <td mat-cell *matCellDef="let element"> {{element.codigo_sugef}} </td>
+    </ng-container>
+    <ng-container matColumnDef="nivel_riesgo">
+        <th mat-header-cell *matHeaderCellDef> Nivel de Riesgo </th>
+        <td mat-cell *matCellDef="let element"> {{element.nivel_riesgo}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+</table>
